@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="tutorial.css">
+    <title>Tutorial Webpage</title>
+</head>
+<body>
+    <header>
+        <!--Navigation Horizontal Bar-->
+        <nav class="zone">
+            <ul class="main-nav">
+                <li class="push"><a href="#Functions">Functions</a></li>
+                <li class="push"><a href="#Objects">Objects</a></li>
+                <li class="push"><a href="#Arrays">Arrays</a></li>
+                <li class="push"><a href="#Resources">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Side Menu-->
+    <div class="sidenav">
+        <div class="zoomInLeft"></div>
+        <a href="https://w3schools.com" target="blank">W3Schools</a>
+        <a href="https://developer.mozilla.org" target="blank">MDN</a>
+        <a href="https://stackoverflow.com" target="blank">Stack Overflow</a>
+        <a href="https://javascript.com" target="blank"><font size="5">JavaScript<font></a>
+      </div>
+    <section>
+        <!--Cover Section-->
+        <div class="container zone"><img class="zoomInLeft" src="https://images.unsplash.com/photo-1526253038957-bce54e05968e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"></div>
+    </section>
+    
+    <section>
+        <!--Grid articles-->
+        <div class="zone grid-wrapper"></div>
+        <article>
+            <div id="Functions">
+                <div class="box zone"><strong>Functions</strong>
+                    <p>Functions are the basic "building blocks" of JavaScript.  Functions allow JavaScript to interact with HTML 
+                        and Web Browsers.  Using functions, this allows developers to call code many times without repetition.</p>
+                    <p>Functions are composed of a function declaration, parameters, and arguments.  Functions must first be declared 
+                        using function and function name; following next are the parenthesis ().  The parenthesis () are necessary for 
+                        the function to run while being the visual identifier that this code is a function. Next, parameters may be 
+                        established within the parenthesis ().  The function parameters input arguments to be passed to the function.</p>
+                    <p>For example:</p>
+                        <p>function name(parameter/argument, parameter/argument, ...) {</p>
+                        <p>         statement;</p>
+                        <p>} </p>
+                        <p>We then call or invoke the function by: function name();</p>
+                </div>
+            </div>
+            <div id="Objects">
+                <div class="box zone"><strong>Objects</strong>
+                <p>Objects are containers for data values.  Many different element data properties may be stored in objects. As well as 
+                    many different values may be assigned to those properties.</p>
+                <p>Values for objects are coded as name:value pairs (name and value separated by a colon). Objects are containers for named 
+                    values called properties or methods. The name:value pairs are denoted as key:value. The key represents the property 
+                    of the object while the value represents the actual value of the property.</p>
+                    <p>For example:</p>
+                    <p>let user = {username: 'johnDoe', password: true, hobbies: 'javascript', age: 28, motto: 'booyeah!'}</p>
+                <p>To get the keys and values of these properties, dot notation (.name) must be used.</p>
+                    <p>Here is an example of how to get a value from a property:</p>
+                        <p>let user = {username: 'johnDoe', password: true, hobbies: 'javascript', age: 28, motto: 'booyeah!'}</p>
+                        <p>To get the value for motto, we will use .dot notation. Here is our code:</p>
+                            <p>console.log(user.motto);</p>
+                            <p>//'booyeah!'</p>
+                </div>
+            </div>
+            <div id="Arrays">
+                <div class="box zone"><strong>Arrays</strong>
+                <p>Arrays are a special kind of object.  They are used to store a value or multiple values. Such values may be 'strings', 
+                    booleans, numbers, objects, and/or other arrays. Arrays are important in JavaScript.  Arrays allow a simplistic avenue 
+                    to get and set values.</p>
+                <p>Here is an example:</p>
+                <p>let arr = ['array', 23, true, {username: true, password: false}, [1, 2, 3, 4, 5, 6]];</p>
+                <p>To get the value(s) in an array, bracket [] notation is required. Array values are based upon a binary index; meaning 
+                    the value stored in the beginning of the array starts with zero (0). The next index number is 1, 2, 3, ....</p>
+                <p>For example:</p>
+                <p>Take our above array:</p>
+                <p>let arr = ['array', 23, true, {username: true, password: false}, [1, 2, 3, 4, 5, 6]];</p>
+                <p>To get the number 23 in the arr array, we code arr[1];.</p>
+                <p>Although the number 23 is the second element in the array, it is placed at index number one (1), since we begin with 
+                    index number zero (0).</p>
+                <p>Other methods exist to manipulate the values in arrays.  The most common methods are:</p>
+                    <ul>
+                        <li>.push - Allows us to add a value to the end of an existing array.</li>
+                        <li>.pop - Allows us to extract the last element in the array and return it.</li>
+                        <li>.shift - This extracts the first element in an array and returns it.</li>
+                        <li>.unshift - This method adds an element to the beginning of an array.</li>
+                    </ul>
+                <p>These methods must be used to the end of the array argument. Like so:</p>
+                <p>arr.push("element to be added to the end of the array");</p>
+                </div>
+            </div>
+            <div class="box zone"><img src=""></div>
+
+        </article>
+    </section>
+    <!--Footer-->
+    <div id="Resources">
+        <div class="zone yellow"><strong>Resources</strong>
+            <a href="https://css-tricks.com" target="blank">CSS-Tricks</a>
+            <a href="https://freecodecamp.com" target="blank">FCC</a>
+            <a href="https://paletton.com" target="blank">Paletton</a>
+        </div>
+    </div>
+</body>
+</html>
